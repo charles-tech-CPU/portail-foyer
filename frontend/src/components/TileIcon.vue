@@ -70,6 +70,16 @@
       <rect x="28" y="43" width="8" height="7" rx="1.5" fill="#f5b700" />
     </g>
 
+    <!-- Camera : camera de surveillance, voyant d'enregistrement -->
+    <g v-else-if="name === 'camera'">
+      <rect x="10" y="24" width="34" height="20" rx="6" fill="#2b2f38" />
+      <rect x="10" y="24" width="34" height="6" rx="3" fill="#3f4453" />
+      <path d="M44 28 L56 22 V46 L44 40 Z" fill="#2b2f38" />
+      <circle cx="27" cy="34" r="9" fill="#11151c" />
+      <circle cx="27" cy="34" r="6.5" fill="#ef4444" />
+      <circle cx="24" cy="31" r="2" fill="#ffffff" opacity="0.6" />
+      <circle cx="49" cy="18" r="4" fill="#ef4444" />
+    </g>
     <!-- Tuiles reservees : pictogrammes au trait -->
     <g v-else fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
       <g v-if="name === 'photo'">
@@ -95,7 +105,7 @@
 
 <script setup>
 defineProps({
-  // tennis, football, lol, budget, calendrier, photo, music, microphone, fridge
+  // tennis, football, lol, budget, calendrier, camera, photo, music, microphone, fridge
   name: { type: String, required: true }
 })
 </script>

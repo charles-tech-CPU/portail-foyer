@@ -52,6 +52,15 @@ export const APPS = [
     size: 'small',
     icon: 'lol',
     color: '#a78bfa'
+  },
+  {
+    id: 'camera',
+    label: 'Caméra',
+    description: 'Vidéos de la caméra de surveillance',
+    url: `${SERVER}:8286`,
+    size: 'small',
+    icon: 'camera',
+    color: '#ef4444'
   }
 ]
 
