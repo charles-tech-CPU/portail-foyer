@@ -61,6 +61,15 @@ export const APPS = [
     size: 'small',
     icon: 'camera',
     color: '#ef4444'
+  },
+  {
+    id: 'frigo',
+    label: 'Frigo & recettes',
+    description: 'Recettes à partir de ton frigo',
+    url: `${SERVER}:8287`,
+    size: 'small',
+    icon: 'fridge',
+    color: '#14b8a6'
   }
 ]
 
@@ -68,6 +77,5 @@ export const APPS = [
 export const COMING_SOON = [
   { id: 'photo', label: 'Photo', icon: 'photo' },
   { id: 'spotify', label: 'Spotify', icon: 'music' },
-  { id: 'vocal', label: 'Vocal', icon: 'microphone' },
-  { id: 'frigo', label: 'Frigo & recettes', icon: 'fridge' }
+  { id: 'vocal', label: 'Vocal', icon: 'microphone' }
 ]

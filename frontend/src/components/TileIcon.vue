@@ -95,9 +95,15 @@
         <rect x="24" y="8" width="16" height="28" rx="8" />
         <path d="M16 30 A16 16 0 0 0 48 30 M32 46 V56 M24 56 H40" />
       </g>
-      <g v-else-if="name === 'fridge'">
-        <rect x="16" y="6" width="32" height="52" rx="5" />
-        <path d="M16 26 H48 M23 14 V19 M23 33 V42" />
+      <!-- Frigo & recettes : frigo avec une pomme -->
+      <g v-else-if="name === 'frigo'">
+        <rect x="14" y="6" width="36" height="52" rx="6" fill="#e3f7f4" />
+        <rect x="14" y="6" width="36" height="52" rx="6" fill="none" stroke="#0f766e" stroke-width="2" />
+        <rect x="14" y="24" width="36" height="3" fill="#0f766e" opacity="0.4" />
+        <rect x="20" y="13" width="3" height="7" rx="1.5" fill="#14b8a6" />
+        <rect x="20" y="31" width="3" height="9" rx="1.5" fill="#14b8a6" />
+        <circle cx="38" cy="45" r="7" fill="#f87171" />
+        <path d="M38 40 q3 0 3 4" stroke="#15803d" stroke-width="2" fill="none" stroke-linecap="round" />
       </g>
     </g>
   </svg>
